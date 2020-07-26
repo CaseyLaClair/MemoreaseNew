@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MemorEase</string>
+    <string name="all_topics_activity">All Topics</string>
+    <string name="create_card_activity">Create Card</string>
+    <string name="topic">Topic</string>
+    <string name="topics">Topics</string>
+    <string name="create_card">Create Card</string>
+    <string name="todays_study">Todays Study</string>
+    <string name="my_scores">My Scores</string>
+    <string name="my_scores_activity">My Scores</string>
+    <string name="create_new_topic_button">Create New Topic</string>
+    <string name="sub_topic">Sub-topic</string>
+    <string name="date_to_learn">Learn By?</string>
+    <string name="question">Question...</string>
+    <string name="done">Done</string>
+    <string name="answer">Answer...</string>
+    <string name="topic2">Topic:</string>
+    <string name="subtopic2">Subtopic:</string>
+    <string name="correct">Correct</string>
+    <string name="incorrect">Incorrect</string>
+    <string name="next_card">Next Card</string>
+    <string name="create_new_topic">Create New Topic</string>
+    <string name="sub_topic_optional">Sub-topic (optional)</string>
+    <string name="create_cards_later">Create Cards Later</string>
+    <string name="create_cards_for_topic">Create Cards For Topic</string>
+    <string name="study_cards">Study Cards</string>
+    <string name="create_new_card">Create New Card</string>
+    <string name="delete_all_cards">DELETE ALL CARDS</string>
+    <string name="delete_card">Delete Card</string>
+    <string name="flip_card">Flip Card</string>
+    <string name="delete_topic_and_cards">Delete Topic and Cards</string>
+</resources>

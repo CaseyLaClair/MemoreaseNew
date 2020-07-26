@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#f5f5f5">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/todaysStudyTitle"
+            style="@style/ActivityTitle"
+            android:text="@string/todays_study" />
+
+        <TextView
+            android:id="@+id/topicStudyToday"
+            style="@style/TodaysStudyTopicText"
+            android:layout_alignLeft="@+id/questionCardView"
+            android:layout_alignStart="@+id/questionCardView"
+            android:layout_below="@+id/todaysStudyTitle" />
+
+        <RelativeLayout
+            android:id="@+id/questionCardView"
+            style="@style/RelativeLayoutForCardView"
+            android:layout_below="@id/topicStudyToday">
+
+            <android.support.v7.widget.CardView
+                style="@style/CardViewForCreateCardActivity"
+                app:cardUseCompatPadding="true"
+                app:cardElevation="4dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/TextViewForCardView" />
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/flipOver"
+            style="@style/FlipCardOverButton"
+            android:layout_below="@+id/questionCardView"
+            android:text="Flip Card"
+            android:onClick="flipCardStudy"
+            android:background="#3d5afe"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_below="@+id/flipOver"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:id="@+id/radioGroup">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="16dp"
+                android:text="@string/correct"
+                android:textSize="18sp"
+                android:id="@+id/correct2"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="16dp"
+                android:text="@string/incorrect"
+                android:textSize="18sp"
+                android:id="@+id/incorrect2"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/nextCard2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_below="@+id/radioGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:onClick="nextCardStudy"
+            android:background="#3d5afe"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:text="@string/next_card" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nextCard2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:textSize="18sp"
+            android:text="@string/delete_card" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

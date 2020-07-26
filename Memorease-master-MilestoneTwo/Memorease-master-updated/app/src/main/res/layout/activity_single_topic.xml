@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="false">
+
+        <TextView
+            android:id="@+id/topicTop"
+            style="@style/TopicTextViews" />
+
+        <Button
+            android:id="@+id/studyCards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/study_cards"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/topicTop"
+            android:layout_centerHorizontal="true"
+            android:onClick="takeToStudyCards"
+            android:background="#3d5afe"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/createCardsForTopic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_new_card"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/studyCards"
+            android:layout_centerHorizontal="true"
+            android:onClick="takeToCreateCard"
+            android:background="#3d5afe"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/deleteAllCards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_topic_and_cards"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/createCardsForTopic"
+            android:layout_centerHorizontal="true"
+            android:onClick="deleteAllCards"
+            android:background="#3d5afe"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

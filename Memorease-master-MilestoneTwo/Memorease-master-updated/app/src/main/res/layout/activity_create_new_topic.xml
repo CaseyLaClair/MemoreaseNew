@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#f5f5f5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/createNewTopic"
+            style="@style/ActivityTitle"
+            android:text="@string/create_new_topic" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTopics"
+            style="@style/AutoCompleteTopicSubTopic"
+            android:layout_below="@+id/createNewTopic"
+            android:completionThreshold="1"
+            android:hint="@string/topic" />
+
+        <Button
+            android:id="@+id/createWithCards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_cards_for_topic"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/autoCompleteTopics"
+            android:layout_centerHorizontal="true"
+            android:onClick="createWithCards"
+            android:background="#3d5afe"
+            android:textColor="#ffffff"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/createWithoutCards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_cards_later"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/createWithCards"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="createCardsLater"
+            android:background="#3d5afe"
+            android:textColor="#ffffff"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
